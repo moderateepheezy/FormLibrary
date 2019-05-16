@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FormDatePickerCell" customModule="FormLibrary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="274" height="176"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fw5-LR-ndR">
+                        <rect key="frame" x="0.0" y="0.0" width="274" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iSE-8r-5lz">
+                        <rect key="frame" x="0.0" y="20.5" width="274" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="myz-75-MmX"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="iSE-8r-5lz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bt0-eB-5HP"/>
+                <constraint firstAttribute="trailing" secondItem="iSE-8r-5lz" secondAttribute="trailing" id="Flh-Yw-AYX"/>
+                <constraint firstAttribute="trailing" secondItem="Fw5-LR-ndR" secondAttribute="trailing" id="HiJ-UO-zvp"/>
+                <constraint firstItem="Fw5-LR-ndR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mx1-az-UL2"/>
+                <constraint firstItem="iSE-8r-5lz" firstAttribute="top" secondItem="Fw5-LR-ndR" secondAttribute="bottom" id="NqP-tO-oig"/>
+                <constraint firstItem="Fw5-LR-ndR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jLB-lh-CeL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="274" height="176"/>
+            <connections>
+                <outlet property="textField" destination="iSE-8r-5lz" id="bX0-bi-SqZ"/>
+                <outlet property="titleLabel" destination="Fw5-LR-ndR" id="Gpb-s7-I8q"/>
+                <outlet property="titleValueMarginContraint" destination="NqP-tO-oig" id="iHb-VW-hdr"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="109.15178571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

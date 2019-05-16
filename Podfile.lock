@@ -1,0 +1,24 @@
+PODS:
+  - DropDown (2.3.13)
+  - IQKeyboardManager (6.3.0)
+  - Kingfisher (5.4.0)
+
+DEPENDENCIES:
+  - DropDown
+  - IQKeyboardManager
+  - Kingfisher (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DropDown
+    - IQKeyboardManager
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
+  Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
+
+PODFILE CHECKSUM: 59360f1a20e1aa48243f67e6a40a39a9f6f2ac51
+
+COCOAPODS: 1.6.1
